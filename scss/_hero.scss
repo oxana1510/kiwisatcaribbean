@@ -1,0 +1,213 @@
+.hero{
+	background: url($img_dir + "hero_bg.jpg") no-repeat right center #5e1213;
+	background-size: auto 100%;
+	.first-line{
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		position: relative;
+		flex-wrap: wrap;
+		font: 25px/1 $A;
+		color: #fff;
+		&>div{
+			padding: 15px 2.5rem;
+		}
+		.one{
+			color: #1a0e0e;
+			background-color: #fff;
+			transform: skew(-20deg);
+			padding: 15px 3.5rem 15px 5rem;
+			margin-left: -2rem;
+			div{
+				transform: skew(20deg);
+			}
+		}
+	}
+	.second-line{
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		position: relative;
+		flex-wrap: wrap;
+		&>div{
+			font: 16px/1 $AB;
+			color: #fff;
+			background-color: rgba(238, 46, 49, .5);
+			padding: 15px 6rem 15px 5rem;
+			margin-left: -2rem;
+			transform: skew(-20deg);
+			&>div{
+				transform: skew(20deg);
+			}
+		}
+	}
+	.main-hero-block{
+		margin-top: 4rem;
+		margin-bottom: 14.5rem;
+		.flag{
+			max-width: 350px;
+			height: 303px;
+			background: url($img_dir + 'hero-flag.png') no-repeat center top;
+			background-size: auto 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			@include br2{
+				margin: 0 auto;
+			}
+			@media screen and (max-width: 420px){
+				max-width: 300px;
+				height: 257px;
+			}
+			div{
+				&:nth-child(1){
+					font: 30px/1 $A;
+					color: #000000;
+					margin-bottom: 3rem;
+					margin-top: -2rem;
+					@media screen and (max-width: 420px){
+						font-size: 25px;
+						margin-bottom: 2.5rem;
+						margin-top: -2rem;
+					}
+				}
+				&:nth-child(2){
+					color: #ffffff;
+					display: flex;
+					align-items: center;
+					overflow: hidden;
+					position: relative;
+					flex-wrap: wrap;
+					margin-bottom: 3.5rem;
+					@media screen and (max-width: 420px){
+						margin-bottom: 2.5rem;
+					}
+					span{
+						&:nth-child(1){
+							text-shadow: 0px 0px 4px rgba(178,0,4,0.75);
+							font: 80px/1 $AB;
+							margin-right: 15px;
+							@media screen and (max-width: 420px){
+								font-size: 60px;
+							}
+						}
+						&:nth-child(2){
+							font: 26px/1 $A;
+							@media screen and (max-width: 420px){
+								font-size: 20px;
+							}
+						}
+					}
+				}
+				&:nth-child(3){
+					a{
+						font: 18px/1 $A;
+						color: #ffffff;
+						position: relative;
+						padding-left: 2.5rem;
+						@media screen and (max-width: 420px){
+							font-size: 16px;
+						}
+						&:before{
+							content: '\e903';
+							font-family: 'icomoon';
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.main-hero-block-inner{
+		margin-bottom: 0;
+		padding-bottom: 4rem;
+	}
+	.choose-btn{
+		max-width: 357px;
+		text-align: center;
+		margin-top: 3rem;
+		@include br2{
+			margin: 3rem auto 0;
+		}
+		a{
+			font: 36px/1 $AB;
+			color: #ffffff;
+			max-width: 357px;
+			height: 79px;
+			border: 2px solid #ffffff;
+			border-radius: 39.5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:hover{
+				background: #ce282c;
+				border-color: #ce282c;
+			}
+		}
+	}
+	.choose-btn-inner{
+		max-width: 251px;
+		margin-left: 5rem;
+		@include br2{
+			margin: 3rem auto 0;
+		}
+		a{
+			font-size: 25px;
+			height: 57px;
+		}
+	}
+	.last-line{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		overflow: hidden;
+		position: relative;
+		flex-wrap: wrap;
+		ul{
+			background-color: #ee2e31;
+			transform: skew(-20deg);
+			padding: 10px 5rem;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin-right: -5rem;
+			@include br3{
+				transform: skew(0);
+			}
+			li{
+				font: 20px/1.2 $A;
+				color: #ffffff;
+				transform: skew(20deg);
+				padding: 5px 3rem 5px 5rem;
+				position: relative;
+				@include br3{
+					transform: skew(0);
+				}
+				&:before{
+					content: '\e90c';
+					font-family: 'icomoon';
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					left: 0;
+					color: #ffae00;
+				}
+			}
+		}
+	}
+	.last-line-inner{
+		bottom: -54px;
+	}
+}
+
+.hero-inner{
+	@media screen and (max-width: 768px){
+		background: url($img_dir + "hero_bg-mob.jpg") no-repeat center #5e1213;
+		background-size: content;
+	}
+}

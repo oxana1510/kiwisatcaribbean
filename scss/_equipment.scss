@@ -1,0 +1,148 @@
+.equipment{
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 100%;
+	        flex: 1 100%;
+	&__title{
+		position: relative;
+		background: #5e5f63;
+		color: #fff;
+		font-size: 25px;
+		h3{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			padding: 20px 205px 20px 20px;
+		}
+		.strike{
+			text-decoration: line-through;
+		}
+		.cost{
+			position: absolute;
+			width: 185px;
+			height: 100%;
+			padding: 20px;
+			background: #ee2e31;
+			right: 0;
+			top: 0;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+	}
+	&__item{
+		position: relative;
+		padding: 22px 0;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+		@media screen and (max-width: 768px){
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+		.bg{
+			position: absolute;
+
+		}
+		.photo{
+			position: relative;
+			max-width: 387px;
+		    min-height: 240px;
+		    line-height: 240px;
+		    width: 100%;
+			-webkit-box-shadow: 56px 0px 64px 0px rgba(24, 24, 24, 0.07);
+			        box-shadow: 56px 0px 64px 0px rgba(24, 24, 24, 0.07);
+			text-align: center;
+			img{
+				position: relative;
+				vertical-align: middle;
+			}
+			&:before{
+				content: "";
+			    position: absolute;
+			    width: 434px;
+    			height: 266px;
+			    top: -15px;
+			    left: 0;
+			    background: url(../img/big-arrow2.png) no-repeat center;
+			    background-size: contain;   
+			}
+		}
+		p{
+			font-size: 12px;
+			line-height: 20px;
+			padding-left: 8%;
+			max-width: 50%;
+			width: 100%;
+			@media screen and (max-width: 992px){
+				padding-left: 18%;
+				max-width: 50%;
+			}
+			@media screen and (max-width: 768px){
+				padding-left: 0;
+				padding-top: 20px;
+				max-width: 100%;
+				text-align: center;
+			}
+		}
+	}
+	&:last-child .equipment__item .photo img{
+		position: absolute;
+	    left: 26px;
+	    bottom: -11px;
+	    max-width: 110%;
+	}
+}
+
+
+@media screen and (max-width: 576px){
+.equipment{
+	&__title{
+		h3{
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			padding: 20px 10px 0;
+			text-align: center;
+		}
+		.cost{
+			position: static;
+			height: auto;
+			margin-top: 10px;
+			width: 100%;
+			-webkit-box-shadow: 10px 0 0 0 #ee2e31, -10px 0 0 0 #ee2e31;
+            box-shadow: 10px 0 0 0 #ee2e31, -10px 0 0 0 #ee2e31;
+		}
+	}
+	&__item{
+		.photo{
+			max-width: 258px;
+	    	min-height: 140px;
+	    	line-height: 140px;
+			img{
+				height: 160px;
+			}
+			&:before{
+				width: 289px;
+    			height: 190px;
+			}
+		}
+	}
+	&:last-child .equipment__item{
+		.photo img{
+			left: 20px;
+		    bottom: -28px;
+		    max-width: 104%;
+		    height: auto;
+		}
+		p{
+			padding-top: 40px;
+		}
+	} 
+}	
+}

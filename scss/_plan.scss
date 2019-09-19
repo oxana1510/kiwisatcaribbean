@@ -1,0 +1,162 @@
+.plan{
+	h2{
+		margin-bottom: 3.5rem;
+		span{
+			padding-top: 1.5rem;
+		}
+	}
+	.subtitle{
+		position: relative;
+		flex: 1 100%;
+		left: 0;
+		font: 36px/1 $AB;
+		color: #fff;
+		padding-top: 5.5rem;
+		padding-bottom: 4.5rem;
+		>span{
+			position: relative;
+			max-width: 415px;
+			width: 100%;
+			display: block;
+			transform: skew(-20deg);
+			background: #ee2e31;
+			padding: 20px 0;
+			>span{
+				display: block;
+				transform: skew(20deg);
+			}
+			&:before{
+				position: absolute;
+				content: "";
+				border-left: 1000px solid #ee2e31;
+				width: 1000px;
+				height: 100%;
+				left: -999px;
+				top: 0;
+			}
+		}
+	}
+	.packages__item{
+		.small{
+			font-size: 14px;
+			line-height: 25px;
+			color: #434343;
+		}
+		&:nth-child(2){
+			.head{
+				background: #3f8ae7;
+			}
+			.num{
+				color: #3f8ae7;
+			}
+			.price span:nth-child(1){
+				color: #3f8ae7;
+			}
+			.order-btn a{
+				color: #3f8ae7;
+				border-color:  #3f8ae7;
+				&:hover{
+					background: #3f8ae7;
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(3){
+			.head{
+				background: #175baf;
+			}
+			.num{
+				color: #175baf;
+			}
+			.price span:nth-child(1){
+				color: #175baf;
+			}
+			.order-btn a{
+				color: #175baf;
+				border-color:  #175baf;
+				&:hover{
+					background: #175baf;
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(4){
+			.head{
+				background: #2b328c;
+			}
+			.num{
+				color: #2b328c;
+			}
+			.price span:nth-child(1){
+				color: #2b328c;
+			}
+			.order-btn a{
+				color: #2b328c;
+				border-color:  #2b328c;
+				&:hover{
+					background: #2b328c;
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(6){
+			.head{
+				background: #3382c3;
+			}
+			.num{
+				color: #3382c3;
+			}
+			.price span:nth-child(1){
+				color: #3382c3;
+			}
+			.order-btn a{
+				color: #3382c3;
+				border-color:  #3382c3;
+				&:hover{
+					background: #3382c3;
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(7){
+			.head{
+				background: #ee2e31;
+			}
+			.num{
+				color: #ee2e31;
+			}
+			.price span:nth-child(1){
+				color: #ee2e31;
+			}
+			.order-btn a{
+				color: #ee2e31;
+				border-color:  #ee2e31;
+				&:hover{
+					background: #ee2e31;
+					color: #fff;
+				}
+			}
+		}
+		&:nth-child(8){
+			.head{
+				background: #24a94a;
+			}
+			.num{
+				font-size: 18px;
+				color: #24a94a;
+				margin: 0;
+			}
+			.price span:nth-child(1){
+				color: #24a94a;
+			}
+			.order-btn a{
+				color: #24a94a;
+				border-color: #24a94a;
+				&:hover{
+					background: #24a94a;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

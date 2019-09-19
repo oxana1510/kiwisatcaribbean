@@ -1,0 +1,40 @@
+footer{
+	text-align: center;
+	padding: 6.5rem 1rem 5rem;
+	font-size: 11px;
+	line-height: 21px;
+	color: #9c9c9c;
+	p{
+		margin-bottom: 3rem;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.social{
+		margin: 1.5rem auto 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			width: 36px;
+			height: 36px;
+			background-color: #ffffff;
+			border: 1px solid #d5d5d5;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			i{
+				color: $bg-color2;
+				font-size: 17px;
+			}
+			&:hover{
+				background:  $bg-color2;
+				border-color:  $bg-color2;
+				i{
+					color: #fff;
+				}
+			}
+		}
+	}
+}

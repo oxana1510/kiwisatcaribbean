@@ -1,0 +1,47 @@
+.top{
+	background:  rgba(1, 1, 1, 0.8);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	flex-wrap: wrap;
+	z-index: 0;
+	&__left{
+		font: 36px/1 $AB;
+		padding: 8px 3rem;
+	}
+	&__right{
+		font: 14px/1 $AB;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: wrap;			
+		margin-left: auto;
+		div{
+			padding: 8px 3rem;
+		}
+		.phone{
+			font: 22px/1 $AB;
+			background-color: #ee2e31;
+			color: #fff;
+			height: 100%;
+			padding: 15px 6rem;
+			transform: skew(-15deg);
+			margin-right: -3rem;
+			position: relative;
+			&:before{
+				content: '\e903';
+				font-family: 'icomoon';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%) skew(15deg);
+				left: 3rem;
+			}
+			&>*{
+				transform: skew(15deg);
+			}
+		}
+	}
+}

@@ -1,0 +1,92 @@
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {content: "\e903";}
+.icon-facebook:before {content: "\e901";}
+.icon-star:before {content: "\e90c";}
+
+:root{
+	font-size: $font-size-def;
+}
+
+body{
+	font-family: $A, "Arial", sans-serif;
+	color: $main-color1;
+	overflow-x: hidden;	
+	min-width: 320px;
+}
+
+a{
+	text-decoration: none;
+	color:  #000000;
+}
+
+.d_flex {
+	@include flex;
+	@include justify-content(space-between);
+	@include align-items(center);
+	@include flex-wrap;
+}
+
+%center-flex{
+	@include flex;
+	@include justify-content(center);
+	@include align-items(center);
+}
+
+.text-center{
+	text-align: center;
+}
+
+.mx-auto{
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+
+ul li{
+	display: inline-block;
+}
+
+input, textarea{
+	-webkit-appearance: none;
+}
+
+textarea{
+	overflow: auto;
+}
+
+@include placeholder{color: #8b8b8b;}
+
+img{
+	max-width: 100%;
+}
+
+strong, b{
+	font-family: $AB;
+}
+
+.container{
+	width: 80%;
+	max-width: 960px;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	@include br1{
+		width: 90%;
+	}
+}
+
+.container2{
+	max-width: 1200px;
+}
+main{
+	overflow: hidden;
+}
