@@ -58,9 +58,14 @@ ul li{
 
 input, textarea{
 	-webkit-appearance: none;
+    	-moz-appearance: none;
+    		appearance: none;
+    border-radius: 0;
+    border: none;
 }
 
 textarea{
+	resize:none;
 	overflow: auto;
 }
 
@@ -72,6 +77,11 @@ img{
 
 strong, b{
 	font-family: $AB;
+	font-weight: normal;
+}
+.text-upper{
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 .container{
@@ -89,4 +99,19 @@ strong, b{
 }
 main{
 	overflow: hidden;
+}
+
+.title-inner{
+	position: relative;
+	background: #5e5f63;
+	color: #fff;
+	font-size: 25px;
+	h3{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+p{
+	line-height: 20px;
 }

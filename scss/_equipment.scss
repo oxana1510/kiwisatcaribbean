@@ -2,15 +2,8 @@
 	-webkit-box-flex: 1;
 	    -ms-flex: 1 100%;
 	        flex: 1 100%;
-	&__title{
-		position: relative;
-		background: #5e5f63;
-		color: #fff;
-		font-size: 25px;
+	.title-inner{
 		h3{
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
 			-webkit-box-pack: justify;
 			    -ms-flex-pack: justify;
 			        justify-content: space-between;
@@ -74,7 +67,6 @@
 		}
 		p{
 			font-size: 12px;
-			line-height: 20px;
 			padding-left: 8%;
 			max-width: 50%;
 			width: 100%;
@@ -101,7 +93,7 @@
 
 @media screen and (max-width: 576px){
 .equipment{
-	&__title{
+	.title-inner{
 		h3{
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;

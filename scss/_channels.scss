@@ -1,0 +1,11 @@
+.channels{
+	max-width: 960px;
+	width: 130%;
+	margin-bottom: 0;
+	.logos{
+		padding-bottom: 2.5rem;
+	}
+	&:before{
+		display: none;
+	}
+}
